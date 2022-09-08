@@ -1,0 +1,20 @@
+<!-- partial:index.partial.html -->
+<div class="login-form">
+    <form [formGroup]="formularioLog" (ngSubmit)="login()">
+      <h1>Login</h1>
+      <div class="content">
+        <div class="input-field">
+          <input placeholder="ID" formControlName="id" required />
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" formControlName="pass" required />
+        </div>
+        <a href="#" class="link">Forgot Your Password?</a>
+      </div>
+      <div class="action">
+          <button routerLink="/auth/register">Register </button>
+          <button type="submit">Log in </button>
+      </div>
+        </form>
+  </div>
+  <!-- partial -->
